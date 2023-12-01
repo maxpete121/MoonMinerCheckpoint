@@ -32,6 +32,7 @@
                     <div>
                         <div class="upgradeCard">
                             <h5>Sharpen Axe</h5>
+                            <h5>Gather + 1</h5>
                             <span class="d-flex">
                                 <h5>Price: <h5 id="sharp-price">10</h5></h5>
                             </span>
@@ -39,6 +40,7 @@
                         </div>
                         <div>
                             <h5>Better Grip</h5>
+                            <h5>Gather +2</h5>
                             <span class="d-flex">
                                 <h5>Price: <h5 id="grip-price">20</h5></h5>
                             </span>
@@ -48,13 +50,19 @@
                     <div>
                         <span>
                             <h5>Apprentice</h5>
+                            <h5>Auto Gather + 2</h5>
                             <span class="d-flex">
                                 <h5>Price: <h5 id="app-price">15</h5></h5>
                             </span>
+                            <button onclick="appBuy()">Buy</button>
                         </span>
                         <span>
-                            <h5>Apprentice</h5>
-                            <h5>Price</h5>
+                            <h5>Chainsaw Expert</h5>
+                            <h5>Auto Gather + 4</h5>
+                            <span class="d-flex">
+                                <h5>Price: <h5 id="chain-price">30</h5></h5>
+                            </span>
+                            <button onclick="chainBuy()">Buy</button>
                         </span>
                     </div>
                 </div>
@@ -63,11 +71,13 @@
                 <div class="text-center">
                     <h2>Stats</h2>
                 </div>
+                <div>
+                    <span class="d-flex justify-content-center">
+                        <h3 class="me-2">Cash: <h3 id="cash">0</h3></h3>
+                    </span>
+                </div>
                 <div class="d-flex justify-content-evenly">
                     <div>
-                        <span class="d-flex">
-                            <h4>Cash: <h4 id="cash">0</h4></h4>
-                        </span>
                         <span class="d-flex">
                             <h4>Gather Rate: <h4 id="gather-rate">0</h4></h4>
                         </span>
@@ -80,7 +90,13 @@
                     </div>
                     <div>
                         <span class="d-flex">
-                            <h4>Auto Gather: <h4 class="auto-gather">0</h4></h4>
+                            <h4>Auto Gather: <h4 id="auto-gather">0</h4></h4>
+                        </span>
+                        <span class="d-flex">
+                            <h4>Apprentice Labor: <h4 id="app-labor">0</h4></h4>
+                        </span>
+                        <span class="d-flex">
+                            <h4> Chainsaw Expert Labor: <h4 id="chain-labor">0</h4></h4>
                         </span>
                     </div>
                 </div>
