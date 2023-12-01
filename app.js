@@ -30,6 +30,7 @@ let autoUpgrades =[{
 
 
 pageUpdate()
+upgradeUpdate()
 
 
 function collectWood() {
@@ -40,6 +41,7 @@ function collectWood() {
    
     
     pageUpdate()
+    
 }
 
 
