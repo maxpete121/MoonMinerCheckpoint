@@ -23,21 +23,27 @@
         </section>
     </main>
     <footer class="container-fluid">
-        <section class="row">
+        <section class="row justify-content-evenly">
             <div class="col-4 bg-dark text-light">
                 <div class="text-center">
                     <h2>Upgrades</h2>
                 </div>
                 <div class="d-flex justify-content-evenly">
                     <div>
-                        <span>
-                            <h5>Sharpen</h5>
-                            <h5>Price</h5>
-                        </span>
-                        <span>
+                        <div class="upgradeCard">
+                            <h5>Sharpen Axe</h5>
+                            <span class="d-flex">
+                                <h5>Price: <h5 id="sharp-price">10</h5></h5>
+                            </span>
+                            <button onclick="sharpenAxe()">Buy</button>
+                        </div>
+                        <div>
                             <h5>Better Grip</h5>
-                            <h5>Price</h5>
-                        </span>
+                            <span class="d-flex">
+                                <h5>Price: <h5 id="grip-price">20</h5></h5>
+                            </span>
+                            <button onclick="newGrip()">Buy</button>
+                        </div>
                     </div>
                     <div>
                         <span>
@@ -59,6 +65,15 @@
                     <div>
                         <span class="d-flex">
                             <h4>Cash: <h4 id="cash">0</h4></h4>
+                        </span>
+                        <span class="d-flex">
+                            <h4>Gather Rate: <h4 id="gather-rate">0</h4></h4>
+                        </span>
+                        <span class="d-flex">
+                            <h4>Axe Sharpness: <h4 id="axe-sharpness">0</h4></h4>
+                        </span>
+                        <span class="d-flex">
+                            <h4>Axe Grip: <h4 id="axe-grip">0</h4></h4>
                         </span>
                     </div>
                 </div>
