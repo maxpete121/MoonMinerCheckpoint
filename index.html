@@ -18,17 +18,17 @@
     <main>
         <section class="mt-4">
             <div class="text-center">
-                <img class="clickTree" src="https://spaces-cdn.clipsafari.com/pferi5n0dmpjdb6hnogstkcuq484" alt="Tree to cut">
+                <img onclick="collectWood()" class="clickTree" src="https://spaces-cdn.clipsafari.com/pferi5n0dmpjdb6hnogstkcuq484" alt="Tree to cut">
             </div>
         </section>
     </main>
     <footer class="container-fluid">
         <section class="row">
-            <div class="col-8 bg-dark text-light">
-                <div>
+            <div class="col-4 bg-dark text-light">
+                <div class="text-center">
                     <h2>Upgrades</h2>
                 </div>
-                <div>
+                <div class="d-flex justify-content-evenly">
                     <div>
                         <span>
                             <h5>Sharpen</h5>
@@ -51,8 +51,21 @@
                     </div>
                 </div>
             </div>
+            <div class="col-4 bg-dark text-light">
+                <div class="text-center">
+                    <h2>Stats</h2>
+                </div>
+                <div>
+                    <div>
+                        <span class="d-flex">
+                            <h4>Cash: <h4 id="cash">0</h4></h4>
+                        </span>
+                    </div>
+                </div>
+            </div>
         </section>
     </footer>
+    <script src="app.js"></script>
     
 </body>
 </html>

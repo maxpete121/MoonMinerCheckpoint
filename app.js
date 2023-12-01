@@ -1,7 +1,7 @@
-let playerStats = [{
+let playerStats = {
     gather: 1,
     wallet: 0,
-}]
+}
 
 let upgrades = [{
     name: 'sharpen',
@@ -22,3 +22,21 @@ let autoUpgrades =[{
     gatherAddAuto: 3,
     price: 30,
 }];
+
+
+
+
+
+function collectWood() {
+    let currentGath = playerStats.gather
+    console.log(currentGath)
+    playerStats.wallet += currentGath
+    console.log(playerStats.wallet)
+   
+    
+    pageUpdate()
+}
+
+function pageUpdate(){
+document.getElementById("cash").innerText = playerStats.wallet
+}
