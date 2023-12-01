@@ -1,5 +1,6 @@
 body{
     background-image: url(https://cdn.forestresearch.gov.uk/2023/11/Forestry-Home-Web-P-Format-Optimised.webp);
+    background-size: cover;
 }
 
 .clickTree{

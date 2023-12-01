@@ -3,6 +3,7 @@ let playerStats = {
     wallet: 0,
     axeSharp: 1,
     axeGrip: 1,
+    autoGather: 0,
 }
 
 let upgrades = [{
@@ -38,6 +39,8 @@ function collectWood() {
     
     pageUpdate()
 }
+
+
 
 function pageUpdate(){
 document.getElementById("cash").innerText = playerStats.wallet
